@@ -5,16 +5,24 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	  <meta name="description" content="Kami pembeli besi buruk terbesar di Malaysia,  dengan harga tinggi serta pengangkutan percuma disediakan ke halaman anda. Semua urusniaga adalah tunai.">
-	  <?php include("component/header.php"); ?>
-	  <?php include("component/analytics.php"); ?>
+	  <meta http-equiv="Cache-control" content="public">
+<!-- favicon -->
+<link rel="icon" type="image/png" href="../assets/images/favicon.png">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css" media="all">
+<!-- Fonts Awesome CSS -->
+<link rel="stylesheet" type="text/css" href="../assets/vendors/fontawesome/css/all.min.css" defer>
+<!-- Elmentkit Icon CSS -->
+<link rel="stylesheet" type="text/css" href="../assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css" defer>
+<!-- Fonts Awesome CSS -->
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="preload" as="font">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" defer>
+<!-- Custom CSS -->
+<link rel="stylesheet" type="text/css" href="../style.css">
       <title>Kereta Tersandai | Hubungi Kami</title>
    </head>
    <body>
-      <div id="siteLoader" class="site-loader">
-         <div class="preloader-content">
-            <img src="assets/images/loader1.gif" alt="">
-         </div>
-      </div>
       <div id="page" class="full-page">
          <header id="masthead" class="site-header site-header-transparent">
             <!-- header html start -->
@@ -27,11 +35,31 @@
                      <div class="site-identity">
                         <h1 class="site-title text-center">
                            <a href="/">
-                              <img src="assets/images/logo.webp" alt="logo" style="width:80%">
+                              <img src="../assets/images/logo.webp" alt="logo" style="width:80%">
                            </a>
                         </h1>
                      </div>
-                     <?php include("component/navigation.php"); ?>
+                     <div class="main-navigation">
+						<nav id="navigation" class="navigation d-none d-lg-inline-block">
+							<ul>
+								<li class="current-menu-item">
+									<a href="/" >Halaman</a>
+								</li>
+								<li>
+									<a href="/about">Tentang Kami</a>
+								</li>
+								<li>
+									<a href="/gallery">Galeri</a>
+								</li>
+								<li>
+									<a href="/contact" class="linkactive">Hubungi Kami</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header-btn d-inline-block">
+							<a href="tel:+60149311086" class="button-round-primary marroon-bg text-white" id="call-now-menu">Call Sekarang</a>
+						</div>
+					</div>
                   </div>
                </div>
             </div>
@@ -40,7 +68,7 @@
          <main id="content" class="site-main">
             <!-- Inner Banner html start-->
             <section class="inner-banner-wrap">
-               <div class="inner-baner-container" style="background-image: url(assets/images/contact/contact-banner.jpeg);">
+               <div class="inner-baner-container" style="background-image: url(../assets/images/contact/contact-banner.jpeg);">
                   <div class="container">
                      <div class="inner-banner-content">
                         <h1 class="inner-title">Hubungi <span class="primary-color">Kami</span></h1>
@@ -106,7 +134,58 @@
             <!-- contact form html end -->
          </main>
          <footer id="colophon" class="site-footer footer-primary">
-            <?php include("component/footer.php"); ?>
+            <div class="top-footer">
+    <div class="container">
+        <div class="upper-footer">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <aside class="widget widget_text">
+                        <div class="footer-logo">
+                            <a href="/"><img src="../assets/images/logo.webp" alt="kereta tersandai logo" style="width:50%;"></a>
+						</div>
+                        <div class="textwidget widget-text">Pengangkutan percuma serta bayaran tunai. Tiada kos lain.</div>
+                    </aside>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                           <aside class="widget widget_text">
+                              <h3 class="widget-title">Hubungi Sekarang</h3>
+                              <p>Feel free to contact and reach us !</p>
+                              <div class="textwidget widget-text">
+                                 <ul>
+                                    <li>
+                                       <a href="tel:+60149311086">
+                                          <i aria-hidden="true" class="icon icon-phone1"></i>
+                                          <a href="tel:+60149311086">+6014 931 1086</a>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="mailtop:info@domain.com">
+                                          <i aria-hidden="true" class="icon icon-envelope1"></i>
+                                          <a href="keretatersadai@gmail.com">keretatersadai@gmail.com</a>
+                                       </a>
+                                    </li>
+									<li class="p-0">
+                                       KERETA TERSADAI SDN BHD
+                                    </li>
+                                 </ul>
+                              </div>
+                           </aside>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <aside class="widget">
+                        <h3 class="widget-title">Quick Access</h3>
+                        <ul>
+                            <li><a href="/">Halaman</a></li>
+                            <li><a href="about">Tentang Kami</a></li>
+                            <li><a href="gallery">Galeri</a></li>
+                            <li><a href="contact">Hubungi Kami</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
          </footer>
          <a id="backTotop" href="#" class="to-top-icon">
             <i class="fas fa-chevron-up"></i>
@@ -128,18 +207,17 @@
       </div>
 
       <!-- JavaScript -->
-      <script src="assets/vendors/jquery/jquery.js"></script>
-      <script src="assets/vendors/waypoint/jquery.waypoints.min.js"></script>
-      <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-      <script src="assets/vendors/progressbar-fill-visible/js/progressBar.min.js"></script>
-      <script src="assets/vendors/jquery-ui/jquery-ui.min.js"></script>
-      <script src="assets/vendors/countdown-date-loop-counter/loopcounter.js"></script>
-      <script src="assets/vendors/counterup/jquery.counterup.js"></script>
-      <script src="assets/vendors/modal-video/jquery-modal-video.min.js"></script>
-      <script src="assets/vendors/masonry/masonry.pkgd.min.js"></script>
-      <script src="assets/vendors/fancybox/dist/jquery.fancybox.min.js"></script>
-      <script src="assets/vendors/slick/slick.min.js"></script>
-      <script src="assets/vendors/slick-nav/jquery.slicknav.js"></script>
-      <script src="assets/js/custom.js"></script>
+      <script src="../assets/vendors/jquery/jquery.js"></script>
+      <script src="../assets/vendors/waypoint/jquery.waypoints.min.js"></script>
+      <script src="../assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+      <script src="../assets/vendors/progressbar-fill-visible/js/progressBar.min.js"></script>
+      <script src="../assets/vendors/jquery-ui/jquery-ui.min.js"></script>
+      <script src="../assets/vendors/countdown-date-loop-counter/loopcounter.js"></script>
+      <script src="../assets/vendors/counterup/jquery.counterup.js"></script>
+      <script src="../assets/vendors/modal-video/jquery-modal-video.min.js"></script>
+      <script src="../assets/vendors/masonry/masonry.pkgd.min.js"></script>
+      <script src="../assets/vendors/slick/slick.min.js"></script>
+      <script src="../assets/vendors/slick-nav/jquery.slicknav.js"></script>
+      <script src="../assets/js/custom.js"></script>
    </body>
 </html>
