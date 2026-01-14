@@ -44,7 +44,27 @@
                            </a>
                         </h1>
                      </div>
-                     <?php include("component/navigation.php"); ?>
+                     <div class="main-navigation">
+						<nav id="navigation" class="navigation d-none d-lg-inline-block">
+							<ul>
+								<li class="current-menu-item">
+									<a href="/" class="linkactive">Halaman</a>
+								</li>
+								<li>
+									<a href="about">Tentang Kami</a>
+								</li>
+								<li>
+									<a href="gallery">Galeri</a>
+								</li>
+								<li>
+									<a href="contact">Hubungi Kami</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header-btn d-inline-block">
+							<a href="tel:+60149311086" class="button-round-primary marroon-bg text-white" id="call-now-menu">Call Sekarang</a>
+						</div>
+					</div>
                   </div>
                </div>
             </div>
@@ -360,11 +380,105 @@
                </div>
                <div class="pattern-overlay"></div>
             </section>
-			<?php include("component/cta-footer.php"); ?>
+			<section class="mt-4">
+			<div class="callback-inner-page" style="background-image: url(assets/images/home/homepage.webp);">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                           <div class="callback-content text-center">
+                              <div class="section-head">
+                                <!--<div class="back-title">INVOLVE NOW</div>-->
+                                 <h2 class="section-title">Ada kereta nak <span class="primary-color">jual?
+                                    <svg class="title-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+                                       <path d="M9.3,127.3c49.3-3,150.7-7.6,199.7-7.4c121.9,0.4,189.9,0.4,282.3,7.2C380.1,129.6,181.2,130.6,70,139 c82.6-2.9,254.2-1,335.9,1.3c-56,1.4-137.2-0.3-197.1,9"></path>
+                                    </svg>
+                                    </span>
+                                 </h2>
+                              </div>
+                              <div class="button-wrap">
+                                 <a href="tel:+60149311086" class="button-round-primary mb-2" id="home-footer-call">Call Sekarang</a>
+									<a href="https://wa.me/+60149311086" class="button-round-white" id="home-footer-whatsapp" target="_blank">WhatsApp Sekarang</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="overlay"></div>
+            </div>
+			</section>
 			
          </main>
          <footer id="colophon" class="site-footer footer-primary">
-            <?php include("component/footer.php"); ?>
+            <div class="top-footer">
+    <div class="container">
+        <div class="upper-footer">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <aside class="widget widget_text">
+                        <div class="footer-logo">
+                            <a href="/"><img src="assets/images/logo.webp" alt="kereta tersandai logo" style="width:50%;"></a>
+						</div>
+                        <div class="textwidget widget-text">Pengangkutan percuma serta bayaran tunai. Tiada kos lain.</div>
+                    </aside>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                           <aside class="widget widget_text">
+                              <h3 class="widget-title">Hubungi Sekarang</h3>
+                              <p>Feel free to contact and reach us !</p>
+                              <div class="textwidget widget-text">
+                                 <ul>
+                                    <li>
+                                       <a href="tel:+60149311086">
+                                          <i aria-hidden="true" class="icon icon-phone1"></i>
+                                          <a href="tel:+60149311086">+6014 931 1086</a>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="mailtop:info@domain.com">
+                                          <i aria-hidden="true" class="icon icon-envelope1"></i>
+                                          <a href="keretatersadai@gmail.com">keretatersadai@gmail.com</a>
+                                       </a>
+                                    </li>
+									<li class="p-0">
+                                       KERETA TERSADAI SDN BHD
+                                    </li>
+                                 </ul>
+                              </div>
+                           </aside>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <aside class="widget">
+                        <h3 class="widget-title">Quick Access</h3>
+                        <ul>
+                            <li><a href="/">Halaman</a></li>
+                            <li><a href="about">Tentang Kami</a></li>
+                            <li><a href="gallery">Galeri</a></li>
+                            <li><a href="contact">Hubungi Kami</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+            <div class="bottom-footer">
+               <div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="copy-right text-left">Copyright &copy; <?php echo date("Y"); ?> kereta tersadai. All Rights Reserved.</div>
+						</div>
+						<div class="col-md-6">
+							<div class="copy-right text-right">
+								<ul class="list-inline">
+									<!--<li class="list-inline-item"><a href="#">Terms of Use<a/></li>-->
+									<li class="list-inline-item"><a href="document/privacy-policy.pdf" target="_blank">Privacy Policy<a/></li>
+									<!--<li class="list-inline-item"><a href="document/disclaimer.pdf" target="_blank">Disclaimer<a/></li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+               </div>
+            </div>
          </footer>
          <a id="backTotop" href="#" class="to-top-icon">
             <i class="fas fa-chevron-up"></i>
