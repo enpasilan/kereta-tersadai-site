@@ -7905,3 +7905,36 @@ product checkout css
   font-weight: 600;
   text-decoration: none;
 }
+
+/* Floating WhatsApp Button */
+.float-wa {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 80px;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.float-wa:hover {
+  color: #FFF;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 767px) {
+  .float-wa {
+    bottom: 70px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+}
