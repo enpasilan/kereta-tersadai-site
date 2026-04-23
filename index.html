@@ -41,20 +41,26 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" media="all" />
     <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Local SEO: Structured Data (update URL/company details if needed) -->
+    <!-- Local SEO: Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "AutomotiveBusiness",
-        "name": "Kereta Tersadai",
+        "@type": "AutoDealer",
+        "name": "Kereta Tersadai Sdn Bhd",
         "url": "https://keretatersadai.com/",
+        "logo": "https://keretatersadai.com/assets/images/logo.webp",
+        "image": "https://keretatersadai.com/assets/images/home/homepage.webp",
+        "description": "Kami pakar membeli kereta tersadai, kereta banjir, dan kereta lama di seluruh Malaysia dengan bayaran tunai segera dan perkhidmatan towing percuma.",
         "telephone": "+60149311086",
         "email": "keretatersadai@gmail.com",
-        "areaServed": "MY"
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "MY"
+        },
+        "areaServed": "MY",
+        "priceRange": "$$"
       }
     </script>
   </head>
@@ -108,11 +114,10 @@
               <div class="col-lg-8 offset-lg-2">
                 <div class="banner-content text-center">
                   <div class="section-head">
-                    <!-- Make this the main H1 for SEO -->
                     <h1 class="section-title banner-title">
-                      Jual Kereta Tersadai Anda Kepada
+                      Jual Kereta Lama, Banjir &amp; Tersadai Anda. Kami Beli
                       <span class="primary-color">
-                        Kami
+                        Tunai!
                         <svg class="title-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
                           <path
                             d="M9.3,127.3c49.3-3,150.7-7.6,199.7-7.4c121.9,0.4,189.9,0.4,282.3,7.2C380.1,129.6,181.2,130.6,70,139 c82.6-2.9,254.2-1,335.9,1.3c-56,1.4-137.2-0.3-197.1,9"
@@ -123,7 +128,7 @@
                   </div>
 
                   <div class="banner-text">
-                    <h4 class="text-white pt-4 pb-2">Pengangkutan percuma serta bayaran tunai. Tiada kos lain.</h4>
+                    <h4 class="text-white pt-4 pb-2">Urusan pantas, towing percuma, dan bayaran tunai segera (Cash on Delivery). Selesaikan masalah kereta anda hari ini.</h4>
                   </div>
 
                   <div class="banner-button">
@@ -135,7 +140,7 @@
                       rel="noopener"
                       id="whatsapp-now-banner"
                     >
-                      WhatsApp Sekarang
+                      WhatsApp Kami
                     </a>
                   </div>
                 </div>
@@ -162,30 +167,30 @@
                   <a class="fact-item text-decoration-none" href="tel:+60149311086" aria-label="Telefon untuk maklumat pembelian kenderaan">
                     <div class="fact-item-content">
                       <div class="fact-icon">
-                        <i aria-hidden="true" class="icon icon-bus"></i>
+                        <i aria-hidden="true" class="fas fa-car-side"></i>
                       </div>
                       <h4>Kami Beli Segala Jenis Kenderaan</h4>
-                      <p>Kami beli segala jenis kenderaan anda. Kereta, Motorsikal, Bas, Lori, Jentera.</p>
+                      <p>Kereta, Motorsikal, Bas, Lori, Jentera - janji ada geran, kami angkat!</p>
                     </div>
                   </a>
 
                   <a class="fact-item text-decoration-none" href="tel:+60149311086" aria-label="Telefon untuk urusan bayaran tunai">
                     <div class="fact-item-content">
                       <div class="fact-icon">
-                        <i aria-hidden="true" class="icon icon-cash"></i>
+                        <i aria-hidden="true" class="fas fa-money-bill-wave"></i>
                       </div>
-                      <h4>Bayaran Tunai</h4>
-                      <p>Semua urusan kami ada dalam tunai. Cash on delivery.</p>
+                      <h4>Bayaran Tunai (Cash)</h4>
+                      <p>Dapat duit terus (Cash on Delivery). Urusan telus, tiada hutang.</p>
                     </div>
                   </a>
 
                   <a class="fact-item text-decoration-none" href="tel:+60149311086" aria-label="Telefon untuk urusan pengangkutan percuma">
                     <div class="fact-item-content">
                       <div class="fact-icon">
-                        <i aria-hidden="true" class="icon icon-truck1"></i>
+                        <i aria-hidden="true" class="fas fa-truck"></i>
                       </div>
-                      <h4>Pengangkutan Percuma</h4>
-                      <p>Tak perlu risau, pengangkutan semua sudah termasuk dan anda tidak perlu keluarkan duit untuk kos-kos yang lain.</p>
+                      <h4>Towing Percuma</h4>
+                      <p>Tak perlu pening. Kos pengangkutan (towing) kami tanggung 100%.</p>
                     </div>
                   </a>
                 </div>
@@ -257,25 +262,25 @@
                     <div class="iconbox-container-bg">
                       <div class="iconbox-item-bg">
                         <div class="iconbox-content-bg">
-                          <i aria-hidden="true" class="icon icon-car"></i>
+                          <i aria-hidden="true" class="fas fa-car"></i>
                           <h4>Kereta</h4>
                         </div>
                       </div>
                       <div class="iconbox-item-bg">
                         <div class="iconbox-content-bg">
-                          <i aria-hidden="true" class="icon icon-bicycle"></i>
+                          <i aria-hidden="true" class="fas fa-motorcycle"></i>
                           <h4>Motor</h4>
                         </div>
                       </div>
                       <div class="iconbox-item-bg">
                         <div class="iconbox-content-bg">
-                          <i aria-hidden="true" class="icon icon-bus"></i>
+                          <i aria-hidden="true" class="fas fa-bus"></i>
                           <h4>Bas</h4>
                         </div>
                       </div>
                       <div class="iconbox-item-bg">
                         <div class="iconbox-content-bg">
-                          <i aria-hidden="true" class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                          <i aria-hidden="true" class="fas fa-truck-pickup"></i>
                           <h4>Lori &amp; Jentera</h4>
                         </div>
                       </div>
@@ -389,14 +394,12 @@
 
             <div class="testimonial-inner">
               <div class="row">
-                <div class="col-md-6">
-                  <div class="testimonial-item d-flex flex-wrap align-items-center">
-                    <figure class="testimonial-img">
-                      <img src="assets/images/testimoni/saharuddinborhan.webp" loading="lazy" alt="Testimoni pelanggan - Saharuddin Borhan" />
-                    </figure>
-                    <div class="testimonial-content">
-                      <p>Saharuddin Borhan</p>
-                      <p class="pb-4">
+                <div class="col-md-6 mb-4">
+                  <div class="card border-0 shadow-sm h-100" style="border-radius: 15px;">
+                    <div class="card-body p-4 text-center">
+                      <img src="assets/images/testimoni/saharuddinborhan.webp" loading="lazy" alt="Testimoni pelanggan - Saharuddin Borhan" class="rounded-circle mb-3 shadow-sm" style="width: 90px; height: 90px; object-fit: cover; border: 3px solid #d97706;" />
+                      <h5 class="font-weight-bold mb-3">Saharuddin Borhan</h5>
+                      <p class="font-italic text-muted mb-0">
                         "Kereta saga pakcik mmg ada value sentimen sikit, tapi tu la nak wat camner, dah lama tersadai dan pakcik mmg xde plan
                         nak baik pulih. Dpt jumpa team kereta tersadai .com kat google, tolak terus siap towing skali. Bagus en Amir, responsif
                         sungguh walaupun hari Ahad."
@@ -405,43 +408,36 @@
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="testimonial-item d-flex flex-wrap align-items-center">
-                    <figure class="testimonial-img">
-                      <img src="assets/images/testimoni/naufalhilmi.webp" loading="lazy" alt="Testimoni pelanggan - Naufal Rahimi" />
-                    </figure>
-                    <div class="testimonial-content">
-                      <p>Naufal Rahimi</p>
-                      <p>"TQ team kereta tersadai, team yang best giler dn mudah rundingan. Bersih sikit halaman rumah. Hahaha!"</p>
+                <div class="col-md-6 mb-4">
+                  <div class="card border-0 shadow-sm h-100" style="border-radius: 15px;">
+                    <div class="card-body p-4 text-center">
+                      <img src="assets/images/testimoni/naufalhilmi.webp" loading="lazy" alt="Testimoni pelanggan - Naufal Rahimi" class="rounded-circle mb-3 shadow-sm" style="width: 90px; height: 90px; object-fit: cover; border: 3px solid #1e3a8a;" />
+                      <h5 class="font-weight-bold mb-3">Naufal Rahimi</h5>
+                      <p class="font-italic text-muted mb-0">"TQ team kereta tersadai, team yang best giler dn mudah rundingan. Bersih sikit halaman rumah. Hahaha!"</p>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="testimonial-item d-flex flex-wrap align-items-center">
-                    <figure class="testimonial-img">
-                      <img src="assets/images/testimoni/raja.webp" loading="lazy" alt="Testimoni pelanggan - Raja Munirah Raja Sofian" />
-                    </figure>
-                    <div class="testimonial-content">
-                      <p>Raja Munirah Raja Sofian</p>
-                      <p class="pb-2">
+                <div class="col-md-6 mb-4">
+                  <div class="card border-0 shadow-sm h-100" style="border-radius: 15px;">
+                    <div class="card-body p-4 text-center">
+                      <img src="assets/images/testimoni/raja.webp" loading="lazy" alt="Testimoni pelanggan - Raja Munirah Raja Sofian" class="rounded-circle mb-3 shadow-sm" style="width: 90px; height: 90px; object-fit: cover; border: 3px solid #1e3a8a;" />
+                      <h5 class="font-weight-bold mb-3">Raja Munirah Raja Sofian</h5>
+                      <p class="font-italic text-muted mb-0">
                         "During the recent flood in sri muda, our proton tiara was flooded and the repair cost was too high and we decided to
                         sell it off to scrap. Yes its tough situation during flood but Mr Amir the team at kereta tersadai.com was kind and
                         polite and was diligent to understand our situation and bought our car at a very good price."
                       </p>
-                      <br />
                     </div>
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="testimonial-item d-flex flex-wrap align-items-center">
-                    <figure class="testimonial-img">
-                      <img src="assets/images/testimoni/irshadiIyas.webp" loading="lazy" alt="Testimoni pelanggan - Irshad Ilyas" />
-                    </figure>
-                    <div class="testimonial-content">
-                      <p>Irshad Ilyas</p>
-                      <p>
+                <div class="col-md-6 mb-4">
+                  <div class="card border-0 shadow-sm h-100" style="border-radius: 15px;">
+                    <div class="card-body p-4 text-center">
+                      <img src="assets/images/testimoni/irshadiIyas.webp" loading="lazy" alt="Testimoni pelanggan - Irshad Ilyas" class="rounded-circle mb-3 shadow-sm" style="width: 90px; height: 90px; object-fit: cover; border: 3px solid #d97706;" />
+                      <h5 class="font-weight-bold mb-3">Irshad Ilyas</h5>
+                      <p class="font-italic text-muted mb-0">
                         "Abah dulu drebar bas sekolah, tapi sekarang dah pencen, bas pun tersadai dkt 3 tahun rasanye. Member rekomen team kereta
                         tersadai. Contact pastu mereka dtg lawat bas dan terus deal. Senang dan mudah. Tq bro, luang masa minum kopi skali.
                         Kekeke."
@@ -524,13 +520,13 @@
                       <ul>
                         <li>
                           <a href="tel:+60149311086">
-                            <i aria-hidden="true" class="icon icon-phone1"></i>
+                            <i aria-hidden="true" class="fas fa-phone-alt"></i>
                             <span class="ml-2">+6014 931 1086</span>
                           </a>
                         </li>
                         <li>
                           <a href="mailto:keretatersadai@gmail.com">
-                            <i aria-hidden="true" class="icon icon-envelope1"></i>
+                            <i aria-hidden="true" class="fas fa-envelope"></i>
                             <span class="ml-2">keretatersadai@gmail.com</span>
                           </a>
                         </li>
@@ -582,11 +578,17 @@
       </a>
     </div>
 
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-mobile-cta d-flex d-md-none">
+      <a href="https://wa.me/60149311086" class="btn-wa w-50 text-center text-white p-3"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="tel:+60149311086" class="btn-call w-50 text-center text-white p-3"><i class="fas fa-phone-alt"></i> Call</a>
+    </div>
+
     <!-- JavaScript -->
-    <script src="assets/vendors/jquery/jquery.js"></script>
-    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/vendors/slick/slick.min.js"></script>
-    <script src="assets/vendors/slick-nav/jquery.slicknav.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/vendors/jquery/jquery.js" defer></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="assets/vendors/slick/slick.min.js" defer></script>
+    <script src="assets/vendors/slick-nav/jquery.slicknav.js" defer></script>
+    <script src="assets/js/custom.js" defer></script>
   </body>
 </html>
