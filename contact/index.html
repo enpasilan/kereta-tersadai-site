@@ -43,6 +43,188 @@
     <link rel="stylesheet" href="../assets/vendors/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="../style.css" />
 
+    <!-- Contact Page Styles -->
+    <style>
+      .contact-page-section {
+        padding-top: 50px;
+        padding-bottom: 70px;
+      }
+      @media (max-width: 575px) {
+        .contact-page-section {
+          padding-top: 30px;
+          padding-bottom: 50px;
+        }
+      }
+
+      /* Contact Cards */
+      .contact-info-card {
+        background: #ffffff;
+        border: 1px solid #e9ecef;
+        border-radius: 14px;
+        padding: 22px 24px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: flex-start;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      }
+      .contact-info-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+        border-color: #ffc501;
+      }
+      .contact-info-card .card-icon {
+        width: 52px;
+        height: 52px;
+        min-width: 52px;
+        border-radius: 12px;
+        background-color: #fff9e6;
+        color: #ffc501;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        margin-right: 18px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .contact-info-card:hover .card-icon {
+        background-color: #ffc501;
+        color: #111111;
+      }
+      .contact-info-card .card-content {
+        flex: 1;
+      }
+      .contact-info-card .card-title {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 4px;
+        color: #212529;
+      }
+      .contact-info-card .card-value {
+        font-size: 17px;
+        font-weight: 700;
+        color: #0b5ed7;
+        display: inline-block;
+        text-decoration: none;
+        margin-bottom: 4px;
+        word-break: break-word;
+      }
+      .contact-info-card .card-value:hover {
+        color: #084298;
+        text-decoration: underline;
+      }
+      .contact-info-card .card-desc {
+        font-size: 13px;
+        color: #6c757d;
+        margin: 0;
+        line-height: 1.4;
+      }
+
+      /* Quick Quotation Form Card */
+      .contact-form-card {
+        background: #ffffff;
+        border: 1px solid #e9ecef;
+        border-radius: 16px;
+        padding: 35px 30px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      }
+      @media (max-width: 575px) {
+        .contact-form-card {
+          padding: 24px 18px;
+        }
+      }
+      .contact-form-card .form-title {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        color: #212529;
+      }
+      .contact-form-card .form-subtitle {
+        font-size: 14px;
+        color: #6c757d;
+        margin-bottom: 22px;
+        line-height: 1.5;
+      }
+      .contact-form-card .form-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #495057;
+        margin-bottom: 6px;
+      }
+      .contact-form-card .form-control,
+      .contact-form-card .form-select {
+        border-radius: 10px;
+        border: 1px solid #ced4da;
+        padding: 11px 14px;
+        font-size: 14px;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+      .contact-form-card .form-control:focus,
+      .contact-form-card .form-select:focus {
+        border-color: #ffc501;
+        box-shadow: 0 0 0 0.2rem rgba(255, 197, 1, 0.25);
+        outline: none;
+      }
+      .btn-submit-wa {
+        background-color: #25d366 !important;
+        border-color: #25d366 !important;
+        color: #ffffff !important;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 14px 24px;
+        border-radius: 50px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .btn-submit-wa:hover {
+        background-color: #1eb954 !important;
+        color: #ffffff !important;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+      }
+
+      /* Trust Highlights */
+      .trust-badge-card {
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 20px;
+        height: 100%;
+        border: 1px solid #e9ecef;
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .trust-badge-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      }
+      .trust-badge-card .badge-icon {
+        font-size: 28px;
+        color: #ffc501;
+        margin-bottom: 10px;
+        display: inline-block;
+      }
+      .trust-badge-card h4 {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        color: #212529;
+      }
+      .trust-badge-card p {
+        font-size: 13px;
+        color: #6c757d;
+        margin: 0;
+        line-height: 1.4;
+      }
+    </style>
+
     <!-- Local SEO: structured data -->
     <script type="application/ld+json">
       {
@@ -80,12 +262,12 @@
         <div class="top-header" style="display: none">&nbsp;</div>
 
         <div class="bottom-header">
-          <div class="containers">
+          <div class="container">
             <div class="hgroup-wrap d-flex justify-content-between align-items-center">
               <div class="site-identity">
                 <div class="site-title text-center m-0">
                   <a href="/" aria-label="Kereta Tersadai - Halaman Utama">
-                    <img src="../assets/images/logo.webp" alt="Logo Kereta Tersadai" style="width: 80%" />
+                    <img src="../assets/images/logo.webp" alt="Logo Kereta Tersadai" />
                   </a>
                 </div>
               </div>
@@ -103,7 +285,7 @@
                 </nav>
 
                 <div class="header-btn d-inline-block">
-                  <a href="tel:+60149311086" class="button-round-primary marroon-bg text-white" id="call-now-menu">
+                  <a href="tel:+60149311086" class="button-round-primary" id="call-now-menu">
                     Call Sekarang
                   </a>
                 </div>
@@ -131,14 +313,197 @@
         <section class="contact-page-section">
           <div class="contact-form-inner">
             <div class="container">
+              <div class="section-head text-center mb-5">
+                <div class="row">
+                  <div class="col-lg-8 offset-lg-2">
+                    <h2 class="section-title">
+                      Hubungi Pakar <span class="primary-color">Kereta Tersadai</span>
+                    </h2>
+                    <div class="section-disc">
+                      <p>
+                        Ada kenderaan lama, tersadai, rosak enjin atau ditenggelami banjir? Hubungi kami sekarang untuk semakan harga segera, bayaran tunai dan perkhidmatan tunda percuma ke seluruh Semenanjung Malaysia.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-4">
+                <!-- Left: Contact Details -->
+                <div class="col-lg-5">
+                  <div class="contact-info-card">
+                    <div class="card-icon">
+                      <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="card-content">
+                      <div class="card-title">Talian Telefon (Call)</div>
+                      <a href="tel:+60149311086" class="card-value">+6014 931 1086</a>
+                      <p class="card-desc">Talian dibuka setiap hari untuk pertanyaan &amp; urusan semakan harga.</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-card">
+                    <div class="card-icon">
+                      <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </div>
+                    <div class="card-content">
+                      <div class="card-title">WhatsApp Rasmi</div>
+                      <a href="https://wa.me/60149311086" target="_blank" rel="noopener" class="card-value">+6014 931 1086</a>
+                      <p class="card-desc">Hantar gambar kereta &amp; salinan geran untuk dapatkan sebut harga terpantas.</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-card">
+                    <div class="card-icon">
+                      <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="card-content">
+                      <div class="card-title">E-mel Rasmi</div>
+                      <a href="mailto:keretatersadai@gmail.com" class="card-value">keretatersadai@gmail.com</a>
+                      <p class="card-desc">Sesuai untuk permohonan sebut harga rasmi atau urusan dokumen syarikat.</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-card">
+                    <div class="card-icon">
+                      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="card-content">
+                      <div class="card-title">KERETA TERSADAI SDN BHD</div>
+                      <span class="card-value text-dark">Seluruh Semenanjung Malaysia</span>
+                      <p class="card-desc">Perkhidmatan pengangkutan percuma disediakan terus ke lokasi anda.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right: Quick Quote / Message Form -->
+                <div class="col-lg-7">
+                  <div class="contact-form-card">
+                    <h3 class="form-title">Dapatkan Sebut Harga Segera</h3>
+                    <p class="form-subtitle">
+                      Isi maklumat ringkas kenderaan anda di bawah. Sistem akan memformatkan mesej anda terus ke WhatsApp pegawai kami untuk penilaian segera.
+                    </p>
+
+                    <form onsubmit="sendWhatsAppQuote(event)">
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <label for="contact-name" class="form-label">Nama Anda</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="contact-name"
+                            placeholder="Contoh: Encik Ahmad"
+                            required
+                          />
+                        </div>
+
+                        <div class="col-md-6">
+                          <label for="contact-phone" class="form-label">Nombor Telefon / WhatsApp</label>
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="contact-phone"
+                            placeholder="Contoh: 012-3456789"
+                            required
+                          />
+                        </div>
+
+                        <div class="col-md-6">
+                          <label for="contact-car" class="form-label">Model Kenderaan</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="contact-car"
+                            placeholder="Contoh: Proton Wira / Myvi / Vios"
+                            required
+                          />
+                        </div>
+
+                        <div class="col-md-6">
+                          <label for="contact-location" class="form-label">Lokasi Kenderaan</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="contact-location"
+                            placeholder="Contoh: Shah Alam, Selangor"
+                            required
+                          />
+                        </div>
+
+                        <div class="col-12">
+                          <label for="contact-condition" class="form-label">Keadaan Kenderaan</label>
+                          <select class="form-select" id="contact-condition">
+                            <option value="Kereta Tersadai / Lama">Kereta Tersadai / Lama (Lama tidak hidup)</option>
+                            <option value="Rosak Enjin / Gearbox">Rosak Enjin / Gearbox</option>
+                            <option value="Kemalangan / Total Loss">Kemalangan / Total Loss</option>
+                            <option value="Ditenggelami Banjir">Ditenggelami Banjir</option>
+                            <option value="Lain-lain Kenderaan (Lori, Van, Bas)">Lain-lain Kenderaan (Lori, Van, Jentera)</option>
+                          </select>
+                        </div>
+
+                        <div class="col-12">
+                          <label for="contact-notes" class="form-label">Catatan Tambahan (Pilihan)</label>
+                          <textarea
+                            class="form-control"
+                            id="contact-notes"
+                            rows="3"
+                            placeholder="Nyatakan jika ada geran asal, masalah kenderaan, atau waktu sesuai untuk dihubungi..."
+                          ></textarea>
+                        </div>
+
+                        <div class="col-12 pt-2">
+                          <button type="submit" class="btn-submit-wa">
+                            <i class="fab fa-whatsapp fa-lg" aria-hidden="true"></i> Hantar Mesej &amp; Dapatkan Sebut Harga
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Trust Highlights Row -->
+              <div class="row g-3 mt-4 pt-2">
+                <div class="col-md-4">
+                  <div class="trust-badge-card">
+                    <div class="badge-icon"><i class="fas fa-money-bill-wave" aria-hidden="true"></i></div>
+                    <h4>Bayaran Tunai Serta-Merta</h4>
+                    <p>Bayaran penuh dibuat semasa pengambilan kereta. Tiada sebarang bayaran lewat.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="trust-badge-card">
+                    <div class="badge-icon"><i class="fas fa-truck-pickup" aria-hidden="true"></i></div>
+                    <h4>Towing Percuma Disediakan</h4>
+                    <p>Tiada sebarang kos tersembunyi bagi pengangkutan kenderaan dari premis anda.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="trust-badge-card">
+                    <div class="badge-icon"><i class="fas fa-file-signature" aria-hidden="true"></i></div>
+                    <h4>Urusan Dokumen Sah</h4>
+                    <p>Urusan pembatalan &amp; surat pelepasan tanggungjawab kenderaan diuruskan dengan teratur.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="mt-4">
+          <div class="callback-inner-page" style="background-image: url('../assets/images/home/footer-bg.webp');">
+            <div class="container">
               <div class="row">
-                <div class="col-md-10">
-                  <div class="contact-detail-container">
+                <div class="col-lg-8 offset-lg-2">
+                  <div class="callback-content text-center">
                     <div class="section-head">
                       <h2 class="section-title">
-                        Tinggalkan mesej
+                        Ada kereta nak
                         <span class="primary-color">
-                          anda!
+                          jual?
                           <svg class="title-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
                             <path
                               d="M9.3,127.3c49.3-3,150.7-7.6,199.7-7.4c121.9,0.4,189.9,0.4,282.3,7.2C380.1,129.6,181.2,130.6,70,139 c82.6-2.9,254.2-1,335.9,1.3c-56,1.4-137.2-0.3-197.1,9"
@@ -148,44 +513,12 @@
                       </h2>
                     </div>
 
-                    <div class="contact-details-list">
-                      <ul>
-                        <li>
-                          <span class="icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
-                          <div class="details-content">
-                            <h4>Company details :</h4>
-                            <span>KERETA TERSADAI SDN BHD</span>
-                          </div>
-                        </li>
-
-                        <li>
-                          <span class="icon"><i class="fas fa-phone-volume" aria-hidden="true"></i></span>
-                          <div class="details-content">
-                            <h4>Contact number :</h4>
-                            <span><a href="tel:+60149311086">+6014 931 1086</a></span>
-                            <span class="d-block mt-2">
-                              <a href="https://wa.me/60149311086" target="_blank" rel="noopener">WhatsApp Sekarang</a>
-                            </span>
-                          </div>
-                        </li>
-
-                        <li>
-                          <span class="icon"><i class="fas fa-envelope-open-text" aria-hidden="true"></i></span>
-                          <div class="details-content">
-                            <h4>Email address :</h4>
-                            <!-- FIXED: proper mailto -->
-                            <span><a href="mailto:keretatersadai@gmail.com">keretatersadai@gmail.com</a></span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <!-- Optional quick CTA buttons (fast + better conversion) -->
-                    <div class="mt-4">
-                      <a href="tel:+60149311086" class="button-round-primary mb-2 d-inline-block">Call Sekarang</a>
+                    <div class="button-wrap">
+                      <a href="tel:+60149311086" id="contact-footer-call" class="button-round-primary mb-2">Call Sekarang</a>
                       <a
                         href="https://wa.me/60149311086"
-                        class="button-round-white black-bg text-white d-inline-block"
+                        class="button-round-white mb-2"
+                        id="contact-footer-whatsapp"
                         target="_blank"
                         rel="noopener"
                       >
@@ -196,6 +529,8 @@
                 </div>
               </div>
             </div>
+
+            <div class="overlay"></div>
           </div>
         </section>
       </main>
@@ -295,5 +630,28 @@
     <script src="../assets/vendors/slick/slick.min.js" defer></script>
     <script src="../assets/vendors/slick-nav/jquery.slicknav.js" defer></script>
     <script src="../assets/js/custom.js" defer></script>
+    <!-- Contact Form WhatsApp Dispatcher -->
+    <script>
+      function sendWhatsAppQuote(event) {
+        event.preventDefault();
+        var name = (document.getElementById("contact-name").value || "").trim();
+        var phone = (document.getElementById("contact-phone").value || "").trim();
+        var car = (document.getElementById("contact-car").value || "").trim();
+        var location = (document.getElementById("contact-location").value || "").trim();
+        var condition = document.getElementById("contact-condition").value;
+        var notes = (document.getElementById("contact-notes").value || "").trim();
+
+        var message = "Hai Kereta Tersadai, saya ingin dapatkan sebut harga kenderaan:\n\n";
+        if (name) message += "*Nama:* " + name + "\n";
+        if (phone) message += "*No. Tel/WhatsApp:* " + phone + "\n";
+        if (car) message += "*Model Kenderaan:* " + car + "\n";
+        if (location) message += "*Lokasi:* " + location + "\n";
+        if (condition) message += "*Keadaan Kenderaan:* " + condition + "\n";
+        if (notes) message += "*Catatan:* " + notes + "\n";
+
+        var waUrl = "https://wa.me/60149311086?text=" + encodeURIComponent(message);
+        window.open(waUrl, "_blank", "noopener,noreferrer");
+      }
+    </script>
   </body>
 </html>

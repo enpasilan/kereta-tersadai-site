@@ -1,26 +1,23 @@
 ;(function( $ ){
 
-/* Fixed header nav */
+/* Fixed header nav with hysteresis buffer to prevent bouncing */
  document.addEventListener("DOMContentLoaded", function(){
+   var masthead = document.getElementById('masthead');
+   if (!masthead) return;
+
+   var isFixed = false;
    window.addEventListener('scroll', function() {
-       var headerHeight = document.querySelector('.top-header').offsetHeight;
-       if($(window).width() >= 992)
-       {
-         if ( window.scrollY > headerHeight ) {
-           document.getElementById('masthead').classList.add('fixed-header');
-         }else {
-           document.getElementById('masthead').classList.remove('fixed-header');
-         }
-       } else {
-         var bottomheaderHeight = document.querySelector('.bottom-header').offsetHeight;
-         var mobileheaderHeight =  headerHeight + bottomheaderHeight;
-         if ( window.scrollY > mobileheaderHeight ) {
-           document.getElementById('masthead').classList.add('fixed-header');
-         }else {
-           document.getElementById('masthead').classList.remove('fixed-header');
-         }
+       var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+       var threshold = 120;
+
+       if (scrollY > threshold && !isFixed) {
+         masthead.classList.add('fixed-header');
+         isFixed = true;
+       } else if (scrollY < 40 && isFixed) {
+         masthead.classList.remove('fixed-header');
+         isFixed = false;
        }
-   });
+   }, { passive: true });
  }); 
 
 /* Show or Hide Search field on clicking search icon 
@@ -38,7 +35,7 @@ $( '.header-search-form, .search-close' ).on( 'click', function(e) {
 
 /* Mobile slick nav */
 $('#navigation').slicknav({
-  duration: 500,
+  duration: 300,
   closedSymbol: '<i class="fas fa-plus"></i>',
   openedSymbol: '<i class="fas fa-minus"></i>',
   prependTo: '.mobile-menu-container',
@@ -84,24 +81,8 @@ $('.testimonial-slider').slick({
 });
 
 $(document).ready(function(){
-  /* Count down */
-  /*loopcounter('time-counter');*/
-
-  setInterval(function(){ 
-   // toggle the class every five second
-   $('.section-head').toggleClass('animated-line');  
-   setTimeout(function(){
-     // toggle back after 1 second
-     $('.section-head').toggleClass('animated-line');  
-   },1000)
-
-  },5000);
-
-  // Progress bar
-  /*$(".example").progressBar({
-    duration: 1000,
-  });*/
-  
+  // Ensure animated-line class is active smoothly without layout thrashing intervals
+  $('.section-head').addClass('animated-line');
 });
 
 /* Single gallery slider 
